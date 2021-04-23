@@ -3,6 +3,7 @@ body {
     text-align: center;
     background-color: #ffc93c;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .login-form {
