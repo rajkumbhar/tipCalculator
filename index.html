@@ -12,22 +12,17 @@
             <input type="number" placeholder="Number of People" id="people"/>
 
             <div class="dropdown">
-                <button class="drop-btn" id="drop-button">Rate our service</button>
+                <button class="drop-btn" onclick="check(event)" id="drop-button">Rate our service</button>
                 <div class="feedback">
                     <p name="Outstanding" onclick="setFeedback('Outstanding 🤩')">Outstanding 🤩</p>
                     <p name="Good" onclick="setFeedback('Good 😃')">Good 😃</p>
                     <p name="It was Ok" onclick="setFeedback('It was Ok 😄')">It was Ok 😀</p>
-                    <p name="Bad" onclick="setFeedback('Bad ☹️')">Bad ☹️</p>
+                    <p name="Bad" onclick="setFeedback('Bad 😖')">Bad 😖</p>
                     <p name="Terrible" onclick="setFeedback('Terrible 😤')">Terrible 😤</p>
                 </div>
             </div>
             <a class="button" onclick="calculate()">Calculate</a>
         </form>
-
-        <div class="details">
-            <p id="totalAmount"></p>
-            <p id="PerHead"></p>
-        </div>
 
         <script src="script.js"></script>
     </body>
