@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <form class="login-form">
+            <h1 class="h1">Tip Calculator</h1>
+            <input type="number" placeholder="Bill Amount" id="amount"/>
+            <input type="number" placeholder="Number of People" id="people"/>
+
+            <div class="dropdown">
+                <button class="drop-btn" id="drop-button">Rate our service</button>
+                <div class="feedback">
+                    <p name="Outstanding" onclick="setFeedback('Outstanding 🤩')">Outstanding 🤩</p>
+                    <p name="Good" onclick="setFeedback('Good 😃')">Good 😃</p>
+                    <p name="It was Ok" onclick="setFeedback('It was Ok 😄')">It was Ok 😀</p>
+                    <p name="Bad" onclick="setFeedback('Bad ☹️')">Bad ☹️</p>
+                    <p name="Terrible" onclick="setFeedback('Terrible 😤')">Terrible 😤</p>
+                </div>
+            </div>
+            <a class="button" onclick="calculate()">Calculate</a>
+        </form>
+
+        <div class="details">
+            <p id="totalAmount"></p>
+            <p id="PerHead"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
