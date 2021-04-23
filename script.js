@@ -25,13 +25,20 @@ function setFeedback(feedback) {
 } 
 
 function calculate() {
+
     var amount = document.getElementById('amount').value;
     var people = document.getElementById('people').value;
 
-    var tipAmount = (amount * tip) / 100;
+    if (amount > 0 && people > 0) {
+        var tipAmount = (amount * tip) / 100;
     var totalAmount =  eval(tipAmount) + eval(amount);
     var perHeadAmt = totalAmount / people;
 
     document.getElementById('totalAmount').innerHTML = "Total Amount : Rs. "+ totalAmount+"/-";
     document.getElementById('PerHead').innerHTML = "Per person Share : Rs. "+ perHeadAmt+"/-"; 
+    }
+    else{
+        alert("Please check Bill Amount or Number of people");
+    }
+    
 }
